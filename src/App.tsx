@@ -16,16 +16,9 @@ import theme from "./theme";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box
-      backgroundSize={"cover"}
-      backgroundImage={`url(${Wave})`}
-      backgroundRepeat={"no-repeat"}
-      zIndex={"base"}
-    >
-      <Box bgGradient="linear(to-r, #050711, #29042E)">
-        <Header />
-        <MidSection />
-      </Box>
+    <Box bgGradient="linear(to-r, #050711, #29042E)">
+      <Header />
+      <MidSection />
     </Box>
   </ChakraProvider>
 );
